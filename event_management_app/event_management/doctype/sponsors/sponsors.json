@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:sponsor_name",
+ "creation": "2023-11-15 21:36:10.284643",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sponsor_name",
+  "email",
+  "phone",
+  "gender",
+  "age",
+  "column_break_gzpr",
+  "sponsor_company_name",
+  "industry_type",
+  "event",
+  "city",
+  "state",
+  "package_details_section",
+  "amount",
+  "section_break_pwyf",
+  "comments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sponsor_name",
+   "fieldtype": "Data",
+   "label": "Sponsor Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "column_break_gzpr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sponsor_company_name",
+   "fieldtype": "Data",
+   "label": "Sponsor Company Name"
+  },
+  {
+   "fieldname": "industry_type",
+   "fieldtype": "Data",
+   "label": "Industry Type"
+  },
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "label": "Event",
+   "options": "Events"
+  },
+  {
+   "fieldname": "package_details_section",
+   "fieldtype": "Section Break",
+   "label": "Package Details"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Int",
+   "label": "Amount "
+  },
+  {
+   "fieldname": "section_break_pwyf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sponsors",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-17 12:02:00.589887",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Sponsors",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

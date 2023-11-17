@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-17 12:13:55.696081",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cheif_guest_name",
+  "title__desigination",
+  "date_and_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "cheif_guest_name",
+   "fieldtype": "Link",
+   "label": "Cheif Guest Name",
+   "options": "Cheif Guest"
+  },
+  {
+   "fieldname": "title__desigination",
+   "fieldtype": "Link",
+   "label": "Title / Desigination",
+   "options": "Cheif Guest"
+  },
+  {
+   "fieldname": "date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Date and Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-17 16:50:40.072454",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Cheif Guest Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

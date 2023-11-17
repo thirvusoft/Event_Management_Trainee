@@ -1,0 +1,228 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:event_name",
+ "creation": "2023-11-15 17:02:23.464972",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "event_details_tab",
+  "section_break_jtpa",
+  "event_details_column",
+  "event_name",
+  "start_time",
+  "column_break_lwxn",
+  "event_date",
+  "end_time",
+  "section_break_gubq",
+  "event_discription",
+  "other_event_details_section",
+  "volunteers_required",
+  "volunteers_count",
+  "column_break_fraz",
+  "event_brochure_file",
+  "event_type",
+  "venue_details_tab",
+  "venue_details_column",
+  "venue_location",
+  "landmark",
+  "venue_capacity",
+  "city",
+  "state",
+  "pin_code",
+  "column_break_kqnq",
+  "location",
+  "cheif_guest_details_tab",
+  "cheif_guest_details_column",
+  "cheif_guest",
+  "sponsor_details_tab",
+  "sponsor_details_section",
+  "sponsor"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jtpa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "event_details_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "label": "Event Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "event_date",
+   "fieldtype": "Data",
+   "label": "Event Date"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "event_discription",
+   "fieldtype": "Small Text",
+   "label": "Event Discription"
+  },
+  {
+   "fieldname": "venue_details_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "venue_location",
+   "fieldtype": "Data",
+   "label": "Venue "
+  },
+  {
+   "fieldname": "landmark",
+   "fieldtype": "Data",
+   "label": "LandMark"
+  },
+  {
+   "fieldname": "venue_capacity",
+   "fieldtype": "Data",
+   "label": "Venue Capacity"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "cheif_guest_details_column",
+   "fieldtype": "Column Break",
+   "label": "Cheif Guest Details"
+  },
+  {
+   "fieldname": "cheif_guest",
+   "fieldtype": "Table",
+   "label": "Cheif Guest",
+   "options": "Cheif Guest Table"
+  },
+  {
+   "fieldname": "sponsor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sponsor Details"
+  },
+  {
+   "fieldname": "sponsor",
+   "fieldtype": "Table",
+   "label": "Sponsor",
+   "options": "Sponsor Table"
+  },
+  {
+   "fieldname": "other_event_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Event Details"
+  },
+  {
+   "fieldname": "volunteers_required",
+   "fieldtype": "Select",
+   "label": "Volunteers Required",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "state"
+  },
+  {
+   "fieldname": "column_break_fraz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "event_brochure_file",
+   "fieldtype": "Attach Image",
+   "label": "Event Brochure File"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Int",
+   "label": "Pin code"
+  },
+  {
+   "fieldname": "event_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Event Details"
+  },
+  {
+   "fieldname": "venue_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Venue Details"
+  },
+  {
+   "fieldname": "cheif_guest_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Cheif Guest Details"
+  },
+  {
+   "fieldname": "sponsor_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sponsor Details"
+  },
+  {
+   "fieldname": "column_break_kqnq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lwxn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "volunteers_count",
+   "fieldtype": "Data",
+   "label": "Volunteers Count"
+  },
+  {
+   "fieldname": "event_type",
+   "fieldtype": "Select",
+   "label": "Event Type",
+   "options": "Corporate Event\nCollege Event\nCharity Event\nProduct Launch Event"
+  },
+  {
+   "fieldname": "section_break_gubq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-17 16:42:08.223514",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Events",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

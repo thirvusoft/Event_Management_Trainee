@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:cheif_guest_name",
+ "creation": "2023-11-15 18:14:20.277045",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cheif_guest_name",
+  "gender",
+  "age",
+  "title__designation",
+  "email",
+  "availability",
+  "attending_date",
+  "column_break_lwsk",
+  "mobile_number",
+  "address",
+  "event",
+  "attending_time",
+  "speech_topic",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "cheif_guest_name",
+   "fieldtype": "Data",
+   "label": "Cheif Guest Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "title__designation",
+   "fieldtype": "Data",
+   "label": "Title / Designation"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "availability",
+   "fieldtype": "Data",
+   "label": "Availability"
+  },
+  {
+   "fieldname": "attending_date",
+   "fieldtype": "Date",
+   "label": "Attending Date"
+  },
+  {
+   "fieldname": "column_break_lwsk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "label": "Event",
+   "options": "Events"
+  },
+  {
+   "fieldname": "attending_time",
+   "fieldtype": "Time",
+   "label": "Attending Time"
+  },
+  {
+   "fieldname": "speech_topic",
+   "fieldtype": "Data",
+   "label": "Speech Topic"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cheif Guest",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-17 15:28:37.803483",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Cheif Guest",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

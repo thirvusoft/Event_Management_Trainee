@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-15 21:44:54.716973",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_e6tk",
+  "first_name",
+  "age",
+  "email",
+  "city",
+  "column_break_goto",
+  "last_name",
+  "gender",
+  "phone_number",
+  "state",
+  "event_details_section",
+  "filters_column",
+  "event_date",
+  "location",
+  "column_break_lgin",
+  "event",
+  "check_availability",
+  "past_experience_section",
+  "add_comments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_e6tk",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_goto",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "event_details_section",
+   "fieldtype": "Section Break",
+   "label": "Event Details"
+  },
+  {
+   "fieldname": "filters_column",
+   "fieldtype": "Column Break",
+   "label": "Filters"
+  },
+  {
+   "fieldname": "event_date",
+   "fieldtype": "Data",
+   "label": "Preferred Date"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Preferred Location"
+  },
+  {
+   "fieldname": "column_break_lgin",
+   "fieldtype": "Column Break",
+   "label": "Event"
+  },
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "label": "Event ",
+   "options": "Events"
+  },
+  {
+   "fieldname": "check_availability",
+   "fieldtype": "Button",
+   "label": "Check Availability"
+  },
+  {
+   "fieldname": "past_experience_section",
+   "fieldtype": "Section Break",
+   "label": "Past Experience"
+  },
+  {
+   "fieldname": "add_comments",
+   "fieldtype": "Small Text",
+   "label": "Add Comments"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Volunteers",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-17 10:00:35.798072",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Volunteers",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
