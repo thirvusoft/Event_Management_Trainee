@@ -7,6 +7,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "personal_details_tab",
   "sponsor_name",
   "email",
   "phone",
@@ -14,14 +15,23 @@
   "age",
   "column_break_gzpr",
   "sponsor_company_name",
-  "industry_type",
-  "event",
   "city",
   "state",
-  "package_details_section",
-  "amount",
+  "street",
+  "country",
   "section_break_pwyf",
   "comments",
+  "package_details_tab",
+  "package_details_section",
+  "sponsor_type",
+  "amount",
+  "company_details_tab",
+  "company_name",
+  "company_contact_number",
+  "company_type",
+  "column_break_qlzu",
+  "company_email",
+  "website_link",
   "amended_from"
  ],
  "fields": [
@@ -61,17 +71,6 @@
    "label": "Sponsor Company Name"
   },
   {
-   "fieldname": "industry_type",
-   "fieldtype": "Data",
-   "label": "Industry Type"
-  },
-  {
-   "fieldname": "event",
-   "fieldtype": "Link",
-   "label": "Event",
-   "options": "Events"
-  },
-  {
    "fieldname": "package_details_section",
    "fieldtype": "Section Break",
    "label": "Package Details"
@@ -101,6 +100,61 @@
    "label": "State"
   },
   {
+   "fieldname": "personal_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "package_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Package Details"
+  },
+  {
+   "fieldname": "sponsor_type",
+   "fieldtype": "Select",
+   "label": "Sponsor Type",
+   "options": "Media Sponsor"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "company_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "company_contact_number",
+   "fieldtype": "Data",
+   "label": "Company Contact Number"
+  },
+  {
+   "fieldname": "company_type",
+   "fieldtype": "Data",
+   "label": "Company Type"
+  },
+  {
+   "fieldname": "column_break_qlzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "label": "Company Email"
+  },
+  {
+   "fieldname": "website_link",
+   "fieldtype": "Data",
+   "label": "Website Link"
+  },
+  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -109,12 +163,17 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-17 12:02:00.589887",
+ "modified": "2023-11-17 22:42:12.616182",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Sponsors",

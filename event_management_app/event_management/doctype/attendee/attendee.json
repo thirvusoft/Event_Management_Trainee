@@ -15,14 +15,12 @@
   "section_break_vnay",
   "event",
   "event_date_and_time",
-  "check_availability",
   "column_break_dndg",
   "event_location",
   "venue",
   "section_break_dplw",
   "past_experience_column",
-  "add_comments",
-  "amended_from"
+  "add_comments"
  ],
  "fields": [
   {
@@ -70,11 +68,6 @@
    "options": "Events"
   },
   {
-   "fieldname": "check_availability",
-   "fieldtype": "Button",
-   "label": "Check Availability"
-  },
-  {
    "fieldname": "column_break_dndg",
    "fieldtype": "Column Break"
   },
@@ -107,22 +100,12 @@
    "fieldname": "event_date_and_time",
    "fieldtype": "Datetime",
    "label": "Event Date and Time"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Attendee",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-17 11:10:12.102260",
+ "modified": "2023-11-17 22:43:32.586048",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Attendee",

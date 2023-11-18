@@ -10,26 +10,28 @@
   "section_break_jtpa",
   "event_details_column",
   "event_name",
+  "event_date",
   "start_time",
   "column_break_lwxn",
-  "event_date",
+  "event_type",
+  "event_end_date",
   "end_time",
   "section_break_gubq",
   "event_discription",
   "other_event_details_section",
   "volunteers_required",
   "volunteers_count",
+  "event_incharge",
   "column_break_fraz",
   "event_brochure_file",
-  "event_type",
+  "event_budget",
+  "event_incharge_contact",
   "venue_details_tab",
   "venue_details_column",
   "venue_location",
   "landmark",
   "venue_capacity",
-  "city",
   "state",
-  "pin_code",
   "column_break_kqnq",
   "location",
   "cheif_guest_details_tab",
@@ -57,7 +59,7 @@
   {
    "fieldname": "event_date",
    "fieldtype": "Data",
-   "label": "Event Date"
+   "label": "Event Start Date"
   },
   {
    "fieldname": "start_time",
@@ -94,11 +96,6 @@
    "label": "Venue Capacity"
   },
   {
-   "fieldname": "city",
-   "fieldtype": "Data",
-   "label": "City"
-  },
-  {
    "fieldname": "cheif_guest_details_column",
    "fieldtype": "Column Break",
    "label": "Cheif Guest Details"
@@ -133,8 +130,9 @@
   },
   {
    "fieldname": "state",
-   "fieldtype": "Data",
-   "label": "state"
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
   },
   {
    "fieldname": "column_break_fraz",
@@ -144,11 +142,6 @@
    "fieldname": "event_brochure_file",
    "fieldtype": "Attach Image",
    "label": "Event Brochure File"
-  },
-  {
-   "fieldname": "pin_code",
-   "fieldtype": "Int",
-   "label": "Pin code"
   },
   {
    "fieldname": "event_details_tab",
@@ -197,12 +190,32 @@
    "fieldname": "location",
    "fieldtype": "Geolocation",
    "label": "Location"
+  },
+  {
+   "fieldname": "event_end_date",
+   "fieldtype": "Data",
+   "label": "Event End Date "
+  },
+  {
+   "fieldname": "event_budget",
+   "fieldtype": "Int",
+   "label": "Event Budget"
+  },
+  {
+   "fieldname": "event_incharge",
+   "fieldtype": "Data",
+   "label": "Event Incharge"
+  },
+  {
+   "fieldname": "event_incharge_contact",
+   "fieldtype": "Phone",
+   "label": "Event Incharge Contact"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-17 16:42:08.223514",
+ "modified": "2023-11-17 19:02:12.992603",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Events",

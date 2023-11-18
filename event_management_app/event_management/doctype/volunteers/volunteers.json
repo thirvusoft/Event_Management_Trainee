@@ -23,8 +23,7 @@
   "event",
   "check_availability",
   "past_experience_section",
-  "add_comments",
-  "amended_from"
+  "add_comments"
  ],
  "fields": [
   {
@@ -122,22 +121,12 @@
    "fieldname": "add_comments",
    "fieldtype": "Small Text",
    "label": "Add Comments"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Volunteers",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-17 10:00:35.798072",
+ "modified": "2023-11-17 22:44:25.231196",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Volunteers",
