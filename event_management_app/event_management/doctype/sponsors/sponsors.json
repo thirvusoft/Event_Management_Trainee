@@ -32,24 +32,30 @@
   "column_break_qlzu",
   "company_email",
   "website_link",
-  "amended_from"
+  "address"
  ],
  "fields": [
   {
    "fieldname": "sponsor_name",
    "fieldtype": "Data",
-   "label": "Sponsor Name",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Phone"
+   "in_list_view": 1,
+   "label": "Phone",
+   "reqd": 1
   },
   {
    "fieldname": "gender",
@@ -68,7 +74,9 @@
   {
    "fieldname": "sponsor_company_name",
    "fieldtype": "Data",
-   "label": "Sponsor Company Name"
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
   },
   {
    "fieldname": "package_details_section",
@@ -78,7 +86,8 @@
   {
    "fieldname": "amount",
    "fieldtype": "Int",
-   "label": "Amount "
+   "label": "Amount ",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_pwyf",
@@ -92,12 +101,14 @@
   {
    "fieldname": "city",
    "fieldtype": "Data",
-   "label": "City"
+   "label": "City",
+   "reqd": 1
   },
   {
    "fieldname": "state",
    "fieldtype": "Data",
-   "label": "State"
+   "label": "State",
+   "reqd": 1
   },
   {
    "fieldname": "personal_details_tab",
@@ -128,12 +139,14 @@
   {
    "fieldname": "company_name",
    "fieldtype": "Data",
-   "label": "Company Name"
+   "label": "Company Name",
+   "reqd": 1
   },
   {
    "fieldname": "company_contact_number",
    "fieldtype": "Data",
-   "label": "Company Contact Number"
+   "label": "Company Contact Number",
+   "reqd": 1
   },
   {
    "fieldname": "company_type",
@@ -155,25 +168,21 @@
    "label": "Website Link"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Sponsors",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
-  },
-  {
    "fieldname": "country",
    "fieldtype": "Data",
    "label": "Country"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-17 22:42:12.616182",
+ "modified": "2023-11-20 06:16:27.965398",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Sponsors",

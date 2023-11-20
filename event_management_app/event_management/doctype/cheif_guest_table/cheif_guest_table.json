@@ -13,19 +13,23 @@
   {
    "fieldname": "cheif_guest_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Cheif Guest Name",
-   "options": "Cheif Guest"
+   "options": "Cheif Guest",
+   "reqd": 1
   },
   {
    "fieldname": "date_and_time",
    "fieldtype": "Datetime",
-   "label": "Date and Time"
+   "in_list_view": 1,
+   "label": "Date and Time",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-11-17 22:39:32.389363",
+ "modified": "2023-11-20 06:19:13.912547",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Cheif Guest Table",

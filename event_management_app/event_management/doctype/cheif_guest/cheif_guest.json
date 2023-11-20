@@ -10,22 +10,22 @@
   "cheif_guest_name",
   "gender",
   "age",
-  "attending_date",
   "title__designation",
   "email",
   "column_break_lwsk",
   "availability",
   "mobile_number",
   "address",
-  "event",
-  "attending_time",
-  "speech_topic"
+  "speech_topic",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "cheif_guest_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "First Name",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -41,22 +41,23 @@
   {
    "fieldname": "title__designation",
    "fieldtype": "Data",
-   "label": "Title / Designation"
+   "in_list_view": 1,
+   "label": "Title / Designation",
+   "reqd": 1
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "availability",
    "fieldtype": "Data",
-   "label": "Last Name"
-  },
-  {
-   "fieldname": "attending_date",
-   "fieldtype": "Date",
-   "label": "Attending Date"
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_lwsk",
@@ -74,26 +75,25 @@
    "options": "Address"
   },
   {
-   "fieldname": "event",
-   "fieldtype": "Link",
-   "label": "Event",
-   "options": "Events"
-  },
-  {
-   "fieldname": "attending_time",
-   "fieldtype": "Time",
-   "label": "Attending Time"
-  },
-  {
    "fieldname": "speech_topic",
    "fieldtype": "Data",
    "label": "Speech Topic"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cheif Guest",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-17 19:05:04.944542",
+ "modified": "2023-11-20 06:18:18.467891",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Cheif Guest",

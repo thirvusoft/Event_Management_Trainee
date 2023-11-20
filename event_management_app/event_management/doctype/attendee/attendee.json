@@ -5,28 +5,38 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "personal_details_tab",
   "first_name",
   "age",
   "phone",
+  "city",
   "column_break_lftr",
   "last_name",
   "gender",
   "email",
-  "section_break_vnay",
+  "state",
+  "event_details_tab",
   "event",
+  "check_availability",
+  "section_break_vnay",
   "event_date_and_time",
+  "event_time",
   "column_break_dndg",
   "event_location",
   "venue",
+  "others_tab",
   "section_break_dplw",
   "past_experience_column",
-  "add_comments"
+  "add_comments",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "First Name"
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
   },
   {
    "fieldname": "age",
@@ -36,7 +46,8 @@
   {
    "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Phone"
+   "label": "Phone",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_lftr",
@@ -45,17 +56,20 @@
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "Last Name"
+   "label": "Last Name",
+   "reqd": 1
   },
   {
    "fieldname": "gender",
-   "fieldtype": "Data",
-   "label": "Gender"
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_vnay",
@@ -64,8 +78,9 @@
   {
    "fieldname": "event",
    "fieldtype": "Link",
-   "label": "Event",
-   "options": "Events"
+   "label": "Select Event",
+   "options": "Events",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_dndg",
@@ -74,7 +89,7 @@
   {
    "fieldname": "event_location",
    "fieldtype": "Data",
-   "label": "Event Address"
+   "label": "Event Location"
   },
   {
    "fieldname": "venue",
@@ -98,14 +113,61 @@
   },
   {
    "fieldname": "event_date_and_time",
-   "fieldtype": "Datetime",
-   "label": "Event Date and Time"
+   "fieldtype": "Date",
+   "label": "Event Date "
+  },
+  {
+   "fieldname": "personal_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "event_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Event Details"
+  },
+  {
+   "fieldname": "others_tab",
+   "fieldtype": "Tab Break",
+   "label": "Others"
+  },
+  {
+   "fieldname": "event_time",
+   "fieldtype": "Time",
+   "label": "Event Time"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Attendee",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "check_availability",
+   "fieldtype": "Button",
+   "label": "Check Availability"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-17 22:43:32.586048",
+ "modified": "2023-11-20 06:33:09.301474",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Attendee",

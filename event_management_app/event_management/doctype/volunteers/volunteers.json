@@ -5,6 +5,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "personal_details_tab",
   "section_break_e6tk",
   "first_name",
   "age",
@@ -15,13 +16,24 @@
   "gender",
   "phone_number",
   "state",
+  "event_details_tab",
+  "column_break_lgin",
+  "event",
+  "check_availability",
   "event_details_section",
   "filters_column",
   "event_date",
   "location",
-  "column_break_lgin",
-  "event",
-  "check_availability",
+  "column_break_ovyc",
+  "event_time",
+  "venue",
+  "others_tab",
+  "section_break_jrfc",
+  "column_break_puwh",
+  "id_proof",
+  "column_break_hbsz",
+  "id_proof_document",
+  "amended_from",
   "past_experience_section",
   "add_comments"
  ],
@@ -34,7 +46,9 @@
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "First Name"
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
   },
   {
    "fieldname": "age",
@@ -44,12 +58,16 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "city",
    "fieldtype": "Data",
-   "label": "City"
+   "in_list_view": 1,
+   "label": "City",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_goto",
@@ -58,7 +76,9 @@
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "Last Name"
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
   },
   {
    "fieldname": "gender",
@@ -69,12 +89,14 @@
   {
    "fieldname": "phone_number",
    "fieldtype": "Phone",
-   "label": "Phone Number"
+   "label": "Phone Number",
+   "reqd": 1
   },
   {
    "fieldname": "state",
    "fieldtype": "Data",
-   "label": "State"
+   "label": "State",
+   "reqd": 1
   },
   {
    "fieldname": "event_details_section",
@@ -83,29 +105,29 @@
   },
   {
    "fieldname": "filters_column",
-   "fieldtype": "Column Break",
-   "label": "Filters"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "event_date",
-   "fieldtype": "Data",
-   "label": "Preferred Date"
+   "fieldtype": "Read Only",
+   "label": "Event Date"
   },
   {
    "fieldname": "location",
-   "fieldtype": "Data",
-   "label": "Preferred Location"
+   "fieldtype": "Read Only",
+   "label": "Event Location"
   },
   {
    "fieldname": "column_break_lgin",
    "fieldtype": "Column Break",
-   "label": "Event"
+   "label": "Event Availability"
   },
   {
    "fieldname": "event",
    "fieldtype": "Link",
    "label": "Event ",
-   "options": "Events"
+   "options": "Events",
+   "reqd": 1
   },
   {
    "fieldname": "check_availability",
@@ -121,12 +143,77 @@
    "fieldname": "add_comments",
    "fieldtype": "Small Text",
    "label": "Add Comments"
+  },
+  {
+   "fieldname": "personal_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "event_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Event Details"
+  },
+  {
+   "fieldname": "others_tab",
+   "fieldtype": "Tab Break",
+   "label": "Others"
+  },
+  {
+   "fieldname": "section_break_jrfc",
+   "fieldtype": "Section Break",
+   "label": "ID Proof Details"
+  },
+  {
+   "fieldname": "id_proof_document",
+   "fieldtype": "Attach",
+   "label": "ID Proof Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_puwh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "id_proof",
+   "fieldtype": "Select",
+   "label": "ID Proof",
+   "options": "Aadhar Card\nID card\nPan Card\nLicense\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_hbsz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ovyc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "event_time",
+   "fieldtype": "Read Only",
+   "label": "Event Time"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Volunteers",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-17 22:44:25.231196",
+ "modified": "2023-11-20 06:28:18.819584",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Volunteers",

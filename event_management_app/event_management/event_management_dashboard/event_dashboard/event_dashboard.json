@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Event Count Chart",
+   "width": "Half"
+  }
+ ],
+ "creation": "2023-11-20 06:47:27.121043",
+ "dashboard_name": "Event Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2023-11-20 10:42:56.291728",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Event Dashboard",
+ "owner": "Administrator"
+}
