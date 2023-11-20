@@ -110,12 +110,14 @@
   {
    "fieldname": "event_date",
    "fieldtype": "Read Only",
-   "label": "Event Date"
+   "label": "Event Date",
+   "read_only": 1
   },
   {
    "fieldname": "location",
    "fieldtype": "Read Only",
-   "label": "Event Location"
+   "label": "Event Location",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_lgin",
@@ -192,12 +194,14 @@
   {
    "fieldname": "event_time",
    "fieldtype": "Read Only",
-   "label": "Event Time"
+   "label": "Event Time",
+   "read_only": 1
   },
   {
    "fieldname": "venue",
    "fieldtype": "Data",
-   "label": "Venue"
+   "label": "Venue",
+   "read_only": 1
   },
   {
    "fieldname": "amended_from",
@@ -213,7 +217,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-20 06:28:18.819584",
+ "modified": "2023-11-20 19:11:41.685266",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Volunteers",

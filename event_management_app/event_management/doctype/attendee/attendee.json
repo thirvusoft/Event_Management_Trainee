@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:{first_name}-{last_name}",
+ "autoname": "format:{first_name} {last_name}",
  "creation": "2023-11-15 21:58:32.151935",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -89,12 +89,14 @@
   {
    "fieldname": "event_location",
    "fieldtype": "Data",
-   "label": "Event Location"
+   "label": "Event Address",
+   "read_only": 1
   },
   {
    "fieldname": "venue",
    "fieldtype": "Data",
-   "label": "Venue"
+   "label": "Venue",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_dplw",
@@ -114,7 +116,8 @@
   {
    "fieldname": "event_date_and_time",
    "fieldtype": "Date",
-   "label": "Event Date "
+   "label": "Event Date ",
+   "read_only": 1
   },
   {
    "fieldname": "personal_details_tab",
@@ -134,7 +137,8 @@
   {
    "fieldname": "event_time",
    "fieldtype": "Time",
-   "label": "Event Time"
+   "label": "Event Time",
+   "read_only": 1
   },
   {
    "fieldname": "city",
@@ -167,7 +171,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-20 06:33:09.301474",
+ "modified": "2023-11-20 18:51:15.709856",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Attendee",
