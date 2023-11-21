@@ -7,12 +7,13 @@
  "field_order": [
   "personal_details_tab",
   "first_name",
-  "age",
+  "last_name",
   "phone",
   "city",
+  "photo",
   "column_break_lftr",
-  "last_name",
   "gender",
+  "age",
   "email",
   "state",
   "event_details_tab",
@@ -45,7 +46,7 @@
   },
   {
    "fieldname": "phone",
-   "fieldtype": "Data",
+   "fieldtype": "Phone",
    "label": "Phone",
    "reqd": 1
   },
@@ -166,12 +167,17 @@
    "fieldname": "check_availability",
    "fieldtype": "Button",
    "label": "Check Availability"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-20 18:51:15.709856",
+ "modified": "2023-11-20 22:54:26.553567",
  "modified_by": "Administrator",
  "module": "Event Management",
  "name": "Attendee",
